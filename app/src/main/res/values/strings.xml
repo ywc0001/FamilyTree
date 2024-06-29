@@ -15,8 +15,8 @@
 <resources>
     <string name="app_name">中华家谱</string>
     <string name="load_error" translatable="false">Can\'t update latest news</string>
-    <string name="retry" translatable="false">Retry</string>
-    <string name="cd_share" translatable="false">Share</string>
+    <string name="retry" translatable="false">重试</string>
+    <string name="cd_share" translatable="false">分享</string>
     <string name="cd_text_settings" translatable="false">Text settings</string>
     <string name="cd_open_navigation_drawer" translatable="false">Open navigation drawer</string>
     <string name="cd_more_actions" translatable="false">More actions</string>
@@ -24,25 +24,25 @@
     <string name="bookmark" translatable="false">bookmark</string>
     <string name="cd_search" translatable="false">Search</string>
     <string name="cd_interests" translatable="false">Interests</string>
-    <string name="published_in" translatable="false">Published in: \n%1$s</string>
+    <string name="published_in" translatable="false">发布于: \n%1$s</string>
     <string name="fewer_stories" translatable="false">Show fewer stories like this?</string>
     <string name="fewer_stories_content" translatable="false">This feature is not yet implemented</string>
     <string name="agree" translatable="false">Agree</string>
     <string name="close">Close</string>
 
     <!-- Home Screen -->
-    <string name="home_title">Home</string>
+    <string name="home_title">主菜单</string>
     <string name="home_tap_to_load_content">Tap to load content</string>
-    <string name="home_top_section_title">Top stories for you</string>
-    <string name="home_popular_section_title">Popular on Jetnews</string>
-    <string name="home_post_min_read">%1$s - %2$d min read</string>
-    <string name="home_post_based_on_history">BASED ON YOUR HISTORY</string>
+    <string name="home_top_section_title">文章推荐</string>
+    <string name="home_popular_section_title">热门文章</string>
+    <string name="home_post_min_read">%1$s - %2$d 分钟</string>
+    <string name="home_post_based_on_history">基于阅读历史推荐</string>
     <string name="home_search">Search articles</string>
 
     <!-- Article Screen -->
-    <string name="article_functionality_not_available">Functionality not available \uD83D\uDE48</string>
-    <string name="article_share_post">Share post</string>
-    <string name="article_post_min_read">%1$s • %2$d min read</string>
+    <string name="article_functionality_not_available">功能不可用 \uD83D\uDE48</string>
+    <string name="article_share_post">分析文章</string>
+    <string name="article_post_min_read">%1$s • %2$d 分钟</string>
 
     <!-- Interests Screen -->
     <string name="interests_title">Interests</string>
@@ -54,5 +54,9 @@
     <string name="cd_navigate_up">Navigate up</string>
     <string name="cd_navigate_home">Navigate to the home screen</string>
     <string name="cd_navigate_interests">Navigate to the interests screen</string>
+
+
+    
+    <string name = "cd_add_to_favorites"> 加入喜欢</string>
 
 </resources>

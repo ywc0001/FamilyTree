@@ -177,7 +177,7 @@ private fun TopAppBar(
         title = {
             Row {
                 Image(
-                    painter = painterResource(id = R.drawable.icon_article_background),
+                    painter = painterResource(id = R.drawable.news),
                     contentDescription = null,
                     modifier = Modifier
                         .clip(CircleShape)

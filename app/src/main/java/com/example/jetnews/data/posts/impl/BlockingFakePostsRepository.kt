@@ -44,7 +44,7 @@ class BlockingFakePostsRepository : PostsRepository {
         return withContext(Dispatchers.IO) {
             val post = posts.allPosts.find { it.id == postId }
             if (post == null) {
-                Result.Error(IllegalArgumentException("Unable to find post"))
+                Result.Error(IllegalArgumentException("无法找到文章"))
             } else {
                 Result.Success(post)
             }
