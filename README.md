@@ -1,5 +1,5 @@
-# Jetnews sample
-Jetnews is a sample news reading app, built with
+# Familytree sample
+Familytree is a sample news reading app, built with
 [Jetpack Compose](https://developer.android.com/jetpack/compose). The goal of the sample is to
 showcase the current UI capabilities of Compose.
 
@@ -21,19 +21,19 @@ screen uses a navigation drawer.
 
 ### App scaffolding
 
-Package [`com.example.jetnews.ui`][1]
+Package [`com.example.familytree.ui`][1]
 
-[`JetnewsApp.kt`][2] arranges the different screens in the `NavDrawerLayout`. 
+[`FamilytreeApp.kt`][2] arranges the different screens in the `NavDrawerLayout`. 
 
-[`JetnewsNavGraph.kt`][3] configures the navigation routes and actions in the app. 
+[`FamilytreeNavGraph.kt`][3] configures the navigation routes and actions in the app. 
 
-[1]: app/src/main/java/com/example/jetnews/ui
-[2]: app/src/main/java/com/example/jetnews/ui/JetnewsApp.kt
-[3]: app/src/main/java/com/example/jetnews/ui/JetnewsNavGraph.kt
+[1]: app/src/main/java/com/example/familytree/ui
+[2]: app/src/main/java/com/example/familytree/ui/FamilytreeApp.kt
+[3]: app/src/main/java/com/example/familytree/ui/FamilytreeNavGraph.kt
 
 ### Main article list
 
-Package [`com.example.jetnews.ui.home`][4]
+Package [`com.example.familytree.ui.home`][4]
 
 This screen shows how to create different custom Composable functions and combine them in a list
 that scrolls vertically and horizontally.
@@ -45,21 +45,21 @@ See how to:
 * Use Material's `Typography` and `ColorScheme` to style the text
 * Use tonal elevation to make the `Card`s stand out from the background
 
-[4]: app/src/main/java/com/example/jetnews/ui/home
+[4]: app/src/main/java/com/example/familytree/ui/home
 
 ### Article detail
 
-Package [`com.example.jetnews.ui.article`][5]
+Package [`com.example.familytree.ui.article`][5]
 
 This screen dives into the Text API, showing how to use different fonts than the ones defined in
 [`Typography`][6]. It also adds a bottom app bar, with custom actions.
 
-[5]: app/src/main/java/com/example/jetnews/ui/article
-[6]: app/src/main/java/com/example/jetnews/ui/theme/Type.kt
+[5]: app/src/main/java/com/example/familytree/ui/article
+[6]: app/src/main/java/com/example/familytree/ui/theme/Type.kt
 
 ### Interests screen
 
-Package [`com.example.jetnews.ui.interests`][7]
+Package [`com.example.familytree.ui.interests`][7]
 
 This screens shows how to use Tabs and switch content depending on the selected tab. It
 also includes a custom checkbox button, [SelectTopicButton][8]
@@ -68,12 +68,12 @@ the on/off behaviour and semantics, while drawing a custom UI. The UI of the but
 drawn with low-level primitives and partly overlaying images. See also how to visualize
 on and off, light and dark version in the Android Studio Preview.
 
-[7]: app/src/main/java/com/example/jetnews/ui/interests
-[8]: app/src/main/java/com/example/jetnews/ui/interests/SelectTopicButton.kt
+[7]: app/src/main/java/com/example/familytree/ui/interests
+[8]: app/src/main/java/com/example/familytree/ui/interests/SelectTopicButton.kt
 
 ### AppWidget powered by Glance
 
-Package [`com.example.jetnews.glance`][9]
+Package [`com.example.familytree.glance`][9]
 
 This package shows how to use Glance and write compose style code for AppWidgets.
 
@@ -86,11 +86,11 @@ and use dynamic colors when supported
 * Tint `Image`s to match the color scheme
 * Launch an activity on click using `actionStartActivity`
 
-[9]: app/src/main/java/com/example/jetnews/glance
+[9]: app/src/main/java/com/example/familytree/glance
 
 ### Data
 
-The data in the sample is static, held in the `com.example.jetnews.data` package.
+The data in the sample is static, held in the `com.example.familytree.data` package.
 
 ### Instrumented and Robolectric tests
 
@@ -99,19 +99,19 @@ UI tests can be run on device/emulators or on JVM with Robolectric.
 * To run Instrumented tests use the "Instrumented tests" run configuration or run the `./gradlew connectedCheck` command.
 * To run tests with Robolectric use the "Robolectric tests" run configuration or run the `./gradlew testDebug` command.
 
-## Jetnews for every screen
+## Familytree for every screen
 
-<img src="screenshots/jetnews_all_screens.png" alt="Screenshot">
+<img src="screenshots/familytree_all_screens.png" alt="Screenshot">
 
-We recently updated Jetnews to enhance its behavior across all mobile devices, both big and small.
-Jetnews already had support for “traditional” mobile screens, so it was tempting to describe all of
+We recently updated Familytree to enhance its behavior across all mobile devices, both big and small.
+Familytree already had support for “traditional” mobile screens, so it was tempting to describe all of
 our changes as “adding large screen support.” While that is true, it misses the point of having
 adaptive UI. For example, if your app is running in split screen mode on a tablet, it shouldn't try
 to display “tablet UI” unless it actually has enough space for it. With all of these changes,
-Jetnews is working better than ever on large screens, but also on small screens too.
+Familytree is working better than ever on large screens, but also on small screens too.
 
 Check out the blog post that explains all the changes in more details:
-https://medium.com/androiddevelopers/jetnews-for-every-screen-4d8e7927752
+https://medium.com/androiddevelopers/familytree-for-every-screen-4d8e7927752
 
 ## License
 

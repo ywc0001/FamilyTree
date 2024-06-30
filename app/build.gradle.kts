@@ -22,10 +22,10 @@ plugins {
 
 android {
     compileSdk = libs.versions.compileSdk.get().toInt()
-    namespace = "com.example.jetnews"
+    namespace = "com.example.familytree"
 
     defaultConfig {
-        applicationId = "com.example.jetnews"
+        applicationId = "com.example.familytree"
         minSdk = libs.versions.minSdk.get().toInt()
         targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1

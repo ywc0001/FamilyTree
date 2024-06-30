@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Instrumented tests" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
-    <module name="JetNews.app" />
+    <module name="FamilyTree.app" />
     <option name="TESTING_TYPE" value="1" />
     <option name="METHOD_NAME" value="" />
     <option name="CLASS_NAME" value="" />
-    <option name="PACKAGE_NAME" value="com.example.jetnews" />
+    <option name="PACKAGE_NAME" value="com.example.familytree" />
     <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
     <option name="EXTRA_OPTIONS" value="" />
     <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />

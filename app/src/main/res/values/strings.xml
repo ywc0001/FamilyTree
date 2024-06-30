@@ -23,7 +23,7 @@
     <string name="unbookmark" translatable="false">unbookmark</string>
     <string name="bookmark" translatable="false">bookmark</string>
     <string name="cd_search" translatable="false">Search</string>
-    <string name="cd_interests" translatable="false">Interests</string>
+    <string name="cd_interests" translatable="false">个性推荐</string>
     <string name="published_in" translatable="false">发布于: \n%1$s</string>
     <string name="fewer_stories" translatable="false">展示更少文章?</string>
     <string name="fewer_stories_content" translatable="false">该功能尚不可用</string>
@@ -47,8 +47,8 @@
     <!-- Interests Screen -->
     <string name="interests_title">兴趣</string>
     <string name="interests_section_topics">主题</string>
-    <string name="interests_section_people">作者</string>
-    <string name="interests_section_publications">刊物</string>
+    <string name="interests_section_people">先祖名人</string>
+    <string name="interests_section_publications">族谱展览</string>
 
     <!-- Navigation actions -->
     <string name="cd_navigate_up">Navigate up</string>
