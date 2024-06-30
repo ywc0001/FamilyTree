@@ -1,118 +1,48 @@
-# Familytree sample
-Familytree is a sample news reading app, built with
-[Jetpack Compose](https://developer.android.com/jetpack/compose). The goal of the sample is to
-showcase the current UI capabilities of Compose.
+中华家谱APP：记录中国宗族族谱信息的移动应用程序。
 
-To try out this sample app, use the latest stable version
-of [Android Studio](https://developer.android.com/studio).
-You can clone this repository or import the
-project from Android Studio following the steps
-[here](https://developer.android.com/jetpack/compose/setup#sample).
+ **参考资料** 
+- [中国家谱知识服务平台](https://jiapu.library.sh.cn/#/)
+- [Android官方文档](https://developer.android.google.cn/reference/)
+- [Kotlin语言文档](https://book.kotlincn.net/text/getting-started.html)
+- [Material Design指南](https://m2.material.io/guidelines/)
+- [GitHub项目模版：JetNews](https://github.com/android/compose-samples/blob/main/JetNews/)
 
-## Screenshots
+---
+ **应用场景** 
 
-<img src="screenshots/screenshots.png" alt="Screenshot">
+目标用户：希望了解家谱文化的用户、有记录家谱需求的用户、对姓氏历史感兴趣的用户。
+用户场景和使用案例：
+- 用户浏览家谱知识和姓氏科普文章。
+- 用户创建和管理自己的家谱信息。
+- 用户搜索特定家谱信息或姓氏文章。
+- 用户分享和交流家谱信息。
+---
+ **系统设计** 
 
-## Features
+架构风格：
 
-This sample contains three screens: a list of articles, a detail page for articles, and a page to
-subscribe to topics of interest. The navigation from the the list of articles to the interests
-screen uses a navigation drawer.
+采用MVVM（Model-View-ViewModel）架构，通过ViewModel管理UI数据状态，使用Compose Navigation实现页面导航。
 
-### App scaffolding
+模块职责、接口和交互：
+- UI模块：负责界面显示和用户交互。
+- ViewModel模块：管理数据和业务逻辑。
+- Repository模块：处理数据的获取和存储。
+- 网络模块：通过Retrofit获取网络数据。
+- 数据库模块：使用Room管理本地数据。
+关键技术
+- Jetpack Compose：用于构建UI界面。
+- ViewModel：管理和保存UI相关的数据。
+- LiveData：观察数据的变化，更新UI。
+- Room：本地数据库，用于存储和管理用户的家谱信息。
+- Retrofit：网络请求库，用于获取家谱和姓氏科普文章。
 
-Package [`com.example.familytree.ui`][1]
+---
 
-[`FamilytreeApp.kt`][2] arranges the different screens in the `NavDrawerLayout`. 
+ **界面展示** 
 
-[`FamilytreeNavGraph.kt`][3] configures the navigation routes and actions in the app. 
-
-[1]: app/src/main/java/com/example/familytree/ui
-[2]: app/src/main/java/com/example/familytree/ui/FamilytreeApp.kt
-[3]: app/src/main/java/com/example/familytree/ui/FamilytreeNavGraph.kt
-
-### Main article list
-
-Package [`com.example.familytree.ui.home`][4]
-
-This screen shows how to create different custom Composable functions and combine them in a list
-that scrolls vertically and horizontally.
-
-See how to:
-
-* Use `Row`s and `Column`s to arrange the contents of the UI
-* Add a top app bar that elevates as the user scrolls
-* Use Material's `Typography` and `ColorScheme` to style the text
-* Use tonal elevation to make the `Card`s stand out from the background
-
-[4]: app/src/main/java/com/example/familytree/ui/home
-
-### Article detail
-
-Package [`com.example.familytree.ui.article`][5]
-
-This screen dives into the Text API, showing how to use different fonts than the ones defined in
-[`Typography`][6]. It also adds a bottom app bar, with custom actions.
-
-[5]: app/src/main/java/com/example/familytree/ui/article
-[6]: app/src/main/java/com/example/familytree/ui/theme/Type.kt
-
-### Interests screen
-
-Package [`com.example.familytree.ui.interests`][7]
-
-This screens shows how to use Tabs and switch content depending on the selected tab. It
-also includes a custom checkbox button, [SelectTopicButton][8]
-that uses a `Toggleable` composable function to provide
-the on/off behaviour and semantics, while drawing a custom UI. The UI of the button is partly
-drawn with low-level primitives and partly overlaying images. See also how to visualize
-on and off, light and dark version in the Android Studio Preview.
-
-[7]: app/src/main/java/com/example/familytree/ui/interests
-[8]: app/src/main/java/com/example/familytree/ui/interests/SelectTopicButton.kt
-
-### AppWidget powered by Glance
-
-Package [`com.example.familytree.glance`][9]
-
-This package shows how to use Glance and write compose style code for AppWidgets.
-
-See how to:
-* Use `Row`, `Column`, `LazyColumn` to arrange the contents of the UI
-* Use a repository from your existing app to load data for the widget and perform updates
-* Configure `android:updatePeriodMillis` to periodically refresh the widget
-* Use `androidx.glance:glance-material3` library to create a custom color scheme with `GlanceTheme`
-and use dynamic colors when supported
-* Tint `Image`s to match the color scheme
-* Launch an activity on click using `actionStartActivity`
-
-[9]: app/src/main/java/com/example/familytree/glance
-
-### Data
-
-The data in the sample is static, held in the `com.example.familytree.data` package.
-
-### Instrumented and Robolectric tests
-
-UI tests can be run on device/emulators or on JVM with Robolectric.
-
-* To run Instrumented tests use the "Instrumented tests" run configuration or run the `./gradlew connectedCheck` command.
-* To run tests with Robolectric use the "Robolectric tests" run configuration or run the `./gradlew testDebug` command.
-
-## Familytree for every screen
-
-<img src="screenshots/familytree_all_screens.png" alt="Screenshot">
-
-We recently updated Familytree to enhance its behavior across all mobile devices, both big and small.
-Familytree already had support for “traditional” mobile screens, so it was tempting to describe all of
-our changes as “adding large screen support.” While that is true, it misses the point of having
-adaptive UI. For example, if your app is running in split screen mode on a tablet, it shouldn't try
-to display “tablet UI” unless it actually has enough space for it. With all of these changes,
-Familytree is working better than ever on large screens, but also on small screens too.
-
-Check out the blog post that explains all the changes in more details:
-https://medium.com/androiddevelopers/familytree-for-every-screen-4d8e7927752
-
+![输入图片说明](image1.png)
+![输入图片说明](image2.png)
+![输入图片说明](image3.png)
 ## License
 
 ```
